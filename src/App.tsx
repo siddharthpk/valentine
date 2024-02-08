@@ -11,8 +11,8 @@ const phrases = [
 ];
 
 function App() {
-  const [noCount, setNoCount] = useState(false);
-  const [yesPressed, setYesPressed] = useState(false);
+  const [noCount, setNoCount] = useState<number>(0);
+  const [yesPressed, setYesPressed] = useState<boolean>(false);
   const yesButtonSize = noCount * 20 + 16;
 
   function handleNoClick() {
